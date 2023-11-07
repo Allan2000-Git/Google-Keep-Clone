@@ -41,11 +41,11 @@ const Form = () => {
     const handleClickAway = () =>{
         setShowTextField(false)
 
-        setNewNote({...note, id: uuid()})
         
         if(newNote.title || newNote.description){
             setNotes((prev)=>[...prev, newNote])
         }
+        setNewNote({...note, id: uuid()})
     }
 
     return (

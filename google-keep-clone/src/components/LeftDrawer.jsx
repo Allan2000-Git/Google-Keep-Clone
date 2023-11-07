@@ -152,10 +152,10 @@ const LeftDrawer = () => {
                 ))}
                 </List>
             </Drawer>
-            <Box sx={{ flexGrow: 1 }}>
-                {/* <DrawerHeader /> */}
-                {/* <Notes/> */}
-            </Box>
+            {/* <Box sx={{ flexGrow: 1 }}>
+                <DrawerHeader />
+                <Notes/>
+            </Box> */}
         </Box>
     );
 }

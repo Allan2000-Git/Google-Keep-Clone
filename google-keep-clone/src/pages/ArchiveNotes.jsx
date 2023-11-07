@@ -9,9 +9,9 @@ const ArchiveNotes = () => {
 
     return (
         <>
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="left">
+        <Box display="flex">
             <Box marginTop="40px" sx={{ flexGrow: 1 }} >
-            <Grid container gap="20px"  style={{marginTop:"20px", display:"flex", alignItems:"left"}}>
+            <Grid container gap="20px"  style={{marginTop:"20px"}}>
             {
                 archiveNotes.map((note) =>{
                     return(

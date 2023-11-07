@@ -9,7 +9,7 @@ import { Box } from '@mui/material'
 const Home = () => {
     return (
         <>
-        <Box style={{ display: "flex", width: "100%", justifyContent:"center" }}>
+        <Box style={{ display: "flex", width: "100%", padding:"20px" }}>
             <BrowserRouter>
                 <LeftDrawer/>
                 <Routes>

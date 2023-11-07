@@ -13,7 +13,7 @@ const reorder = (list, startIndex, endIndex) => {
     return result;
 };
 
-const Notes = () => {
+const Notes = () => {   
 
     const { notes, setNotes } = useNotesContext()
     console.log(notes);
@@ -28,16 +28,15 @@ const Notes = () => {
 
     return (
         <>
-        <Box display="flex" flexDirection="column" justifyContent="center" >
-        <Box sx={{ p: 10, width: '100%' }}>
+        <Box display="flex" flexDirection="column" paddingTop="60px">
             <Form/>
-            <Box marginTop="40px" sx={{ flexGrow: 1 }} >
+            <Box marginTop="40px" sx={{ flexGrow: 1 }}>
             {
                 notes.length > 0?
                 <DragDropContext onDragEnd={onDragEnd}>
                     <Droppable droppableId="droppable">
                     {(provided, snapshot) => (
-                    <Grid container gap="20px"  style={{marginTop:"20px", display:"flex", alignItems:"left"}}
+                    <Grid container gap="20px"  
                     {...provided.droppableProps}
                     ref={provided.innerRef}>
                     {
@@ -66,7 +65,6 @@ const Notes = () => {
             
             </Box>
             </Box>
-        </Box>
         </>
     )
 }
